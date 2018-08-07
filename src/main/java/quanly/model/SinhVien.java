@@ -29,4 +29,9 @@ public class SinhVien {
 		this.tenSinhVien = tenSinhVien;
 	}
 
+	@Override
+	public String toString() {
+		return "SinhVien [maSinhVien=" + maSinhVien + ", tenSinhVien=" + tenSinhVien + "]";
+	}
+
 }

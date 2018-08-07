@@ -14,7 +14,8 @@ public class Test {
 		// TODO Auto-generated method stub
 		AbstractApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
 		SinhVienService sinhVienService = (SinhVienService) context.getBean("sinhVienService");
-		sinhVienService.addSinhVien(new SinhVien("123","abc"));
+//		sinhVienService.addSinhVien(new SinhVien("123","abc"));
+		System.out.println(sinhVienService.getListSinhVien());
 		context.close();
 	}
 

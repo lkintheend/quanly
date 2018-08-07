@@ -29,4 +29,9 @@ public class MonHoc {
 		this.tenMonHoc = tenMonHoc;
 	}
 
+	@Override
+	public String toString() {
+		return "MonHoc [maMonHoc=" + maMonHoc + ", tenMonHoc=" + tenMonHoc + "]";
+	}
+
 }

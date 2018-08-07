@@ -1,7 +1,7 @@
 package quanly.model;
 
 public class DangKyHoc {
-	
+
 	private String maMonHoc;
 	private String maSinhVien;
 
@@ -27,6 +27,11 @@ public class DangKyHoc {
 
 	public void setMaSinhVien(String maSinhVien) {
 		this.maSinhVien = maSinhVien;
+	}
+
+	@Override
+	public String toString() {
+		return "DangKyHoc [maMonHoc=" + maMonHoc + ", maSinhVien=" + maSinhVien + "]";
 	}
 
 }

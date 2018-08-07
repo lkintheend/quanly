@@ -1,5 +1,7 @@
 package quanly.service;
  
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,10 @@ public class SinhVienService {
  
     public void addSinhVien(SinhVien sv) {
     	sinhVienDao.addSinhVien(sv);
+    }
+    
+    public List <SinhVien> getListSinhVien() {
+    	return sinhVienDao.getListSinhVien();
     }
  
 //    public void editPerson(Person person, int personId) {
