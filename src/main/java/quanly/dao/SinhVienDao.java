@@ -1,6 +1,5 @@
 package quanly.dao;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,7 @@ public class SinhVienDao {
 		System.out.println("SV Updated!!");
 	}
 
-	public List <SinhVien> getListSinhVien() {
+	public List<SinhVien> getListSinhVien() {
 		List<SinhVien> listSinhVien = jdbcTemplate.query("SELECT * FROM SINH_VIEN",
 				new BeanPropertyRowMapper(SinhVien.class));
 		return listSinhVien;

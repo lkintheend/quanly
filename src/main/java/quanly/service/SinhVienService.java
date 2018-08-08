@@ -20,23 +20,17 @@ public class SinhVienService {
     	sinhVienDao.addSinhVien(sv);
     }
     
+    public void deleteSinhVien(String maSinhVien) {
+    	sinhVienDao.deleteSinhVien(maSinhVien);
+	}
+
+	public void editSnhVien(SinhVien sinhVien, String maSinhVien) {
+		sinhVienDao.editSnhVien(sinhVien, maSinhVien);
+	}
+    
     public List <SinhVien> getListSinhVien() {
     	return sinhVienDao.getListSinhVien();
     }
  
-//    public void editPerson(Person person, int personId) {
-//        personDao.editPerson(person, personId);
-//    }
-// 
-//    public void deletePerson(int personId) {
-//        personDao.deletePerson(personId);
-//    }
-// 
-//    public Person find(int personId) {
-//        return personDao.find(personId);
-//    }
-// 
-//    public List < Person > findAll() {
-//        return personDao.findAll();
-//    }
+
 }
